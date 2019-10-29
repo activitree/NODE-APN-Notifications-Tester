@@ -1,8 +1,7 @@
 # NODE-APN-Notifications-Tester
-Test APN (IOS) notifications with P8 certificate
-
-
-Credits: https://eladnava.com/send-push-notifications-to-ios-devices-using-xcode-8-and-swift-3/
+Test APN and FCM (IOS) notifications and configurations.
+For APN, the certificate will be provided at this code level. Just add the file and import it in app.js.
+For FCM, the P8 Apple certificate stays with your Goole Project IOS App. With FCM if your token was generated with a development Provision profile, expect it to work on a development app with no issues.
 
 Problem solved: test whether an IOS device token is "development" or "production" and understand if the token is an APN token or FCM generated.
 
@@ -21,3 +20,5 @@ var apnProvider = new apn.Provider({
   },
   production: false // Set to true to test production, false for development tokens. This affects the gateway used for sending.
 ```
+
+Credits: https://eladnava.com/send-push-notifications-to-ios-devices-using-xcode-8-and-swift-3/
