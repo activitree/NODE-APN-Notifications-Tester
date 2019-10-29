@@ -1,5 +1,5 @@
 {
-  "name": "test_APN",
+  "name": "test_APN_FCM",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apn": "^2.2.0"
+    "apn": "^3.0.0-alpha1",
+    "firebase-admin": "^8.6.1"
   }
 }
